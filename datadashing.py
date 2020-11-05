@@ -4,9 +4,14 @@ import numpy as np
 
 # Add a title
 st.title("JosephOregon's First Streamlit App")
+
+
 # Add some text
 st.text('Data Dashing')
 
+
+# Add some text
+st.text('Stay Tuned, adjustments will be made -- initial test.')
 
 if st.checkbox('Expand Test DataFrame'):
     st.dataframe(pd.DataFrame({
@@ -32,7 +37,7 @@ np.random.randn(20, 3),
 columns=['a', 'b', 'c'])
 
 column = st.selectbox(
-'What column to you want to display',
+'Select Column To Display,'
 df.columns)
 
 st.line_chart(df[column])
