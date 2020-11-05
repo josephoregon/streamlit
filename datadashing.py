@@ -9,7 +9,7 @@ st.title("JosephOregon's First Streamlit App")
 # Add some text
 st.title('Data Dashing')
 
-st.test('Uber pickups in NYC')
+st.text('Uber pickups in NYC')
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
