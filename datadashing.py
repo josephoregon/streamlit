@@ -13,6 +13,11 @@ st.text('Data Dashing')
 # Add some text
 st.text('Stay Tuned, adjustments will be made -- initial test.')
 
+
+calls_df = pd.read_html("http://apps.sandiego.gov/sdfiredispatch/", header=0, parse_dates=["Call Date"])
+
+st.dataframe(calls_df)
+
 if st.checkbox('Expand Test DataFrame'):
     st.dataframe(pd.DataFrame({
         'first column': [1, 2, 3, 4],
