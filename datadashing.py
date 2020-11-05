@@ -37,7 +37,7 @@ np.random.randn(20, 3),
 columns=['a', 'b', 'c'])
 
 column = st.selectbox(
-'Select Column To Display,'
+'Select Column To Display',
 df.columns)
 
 st.line_chart(df[column])
